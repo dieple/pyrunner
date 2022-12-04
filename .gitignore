@@ -1,0 +1,47 @@
+# terraforn
+.terraform/
+*.tfstate.bkp
+*.tfstate.backup
+*.iml
+.log
+tfplan
+plan.out
+
+# secrets
+secrets.auto.tfvars
+
+# queries
+queries/node_modules
+queries/package-lock.json
+
+# vs code
+.history
+
+__pycache__/
+*.py[co]
+plan.out
+.idea/
+
+backend_override.tf
+providers_override.tf
+_accounts.tf
+_backend.tf
+_envs.tf
+_providers.tf
+
+!infra/terraform/aws/variables/config/backend_override.tf
+!infra/terraform/aws/variables/config/providers_override.tf
+
+!infra/terraform/aws/variables/_accounts.tf
+!infra/terraform/aws/variables/_backend.tf
+!infra/terraform/aws/variables/_envs.tf
+!infra/terraform/aws/variables/_providers.tf
+
+.terragrunt-cache/
+
+generated-ssh-key-pairs/
+
+*.tar.gz
+*.tgz
+*.zip
+/tfrunner

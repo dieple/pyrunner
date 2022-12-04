@@ -1,0 +1,7 @@
+#cloud-config
+#package_upgrade: true
+# going forward all other user startup 'scripts' is mv to ansible playbook
+# No more changes to be made here!
+runcmd:
+  - aws configure set region ${region}
+  - aws ec2 associate-address --instance-id $(curl http://169.254.169.254/latest/meta-data/instance-id) --allocation-id ${allocation_id} --allow-reassociation

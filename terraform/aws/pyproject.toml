@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "infra"
+version = "0.0.1"
+description = "Laser Digital Infrastructure Project"
+authors = ["Laser Digital <infra@laserdigital.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "1.15.11"
+iterfzf = "0.5.0.20.0"
+python-gitlab = "2.5.0"
+python-hcl2 = "0.2.5"
+python-terraform = "0.10.1"
+requests = "2.24.0"
+ruamel_yaml = "0.15.100"

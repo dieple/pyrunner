@@ -1,0 +1,52 @@
+{
+    "workspaces":[
+        {
+            "id": "dev",
+            "account_id": "555555555555",
+            "account_name": "DEVELOPMENT Environment",
+            "workspace_iam_role": "arn:aws:iam::555555555555:role/administrators",
+            "share_r53_iam_role": "arn:aws:iam::111111111111:role/administrators",
+            "share_ssm_iam_role": "arn:aws:iam::222222222222:role/administrators",
+            "region": "eu-west-2",
+            "bucket_region": "eu-west-2",
+            "bucket": "terraform-state-bucket",
+            "dynamodb": "terraform-state-lock-dynamodb"
+        },
+        {
+            "id": "stg",
+            "account_id": "666666666666",
+            "account_name": "DEVELOPMENT Environment",
+            "workspace_iam_role": "arn:aws:iam::666666666666:role/administrators",
+            "share_r53_iam_role": "arn:aws:iam::111111111111:role/administrators",
+            "share_ssm_iam_role": "arn:aws:iam::222222222222:role/administrators",
+            "region": "eu-west-2",
+            "bucket_region": "eu-west-2",
+            "bucket": "terraform-state-bucket",
+            "dynamodb": "terraform-state-lock-dynamodb"
+        },
+        {
+            "id": "qa",
+            "account_id": "777777777777",
+            "account_name": "QA Environment",
+            "workspace_iam_role": "arn:aws:iam::777777777777:role/administrators",
+            "share_r53_iam_role": "arn:aws:iam::111111111111:role/administrators",
+            "share_ssm_iam_role": "arn:aws:iam::222222222222:role/administrators",
+            "region": "ap-northeast-1",
+            "bucket_region": "eu-west-2",
+            "bucket": "terraform-state-bucket",
+            "dynamodb": "terraform-state-lock-dynamodb"
+        },
+        {
+            "id": "prod",
+            "account_id": "888888888888",
+            "account_name": "PRODUCTION Environment",
+            "workspace_iam_role": "arn:aws:iam::888888888888:role/administrators",
+            "share_r53_iam_role": "arn:aws:iam::111111111111:role/administrators",
+            "share_ssm_iam_role": "arn:aws:iam::222222222222:role/administrators",
+            "region": "ap-northeast-1",
+            "bucket_region": "eu-west-2",
+            "bucket": "terraform-state-bucket",
+            "dynamodb": "terraform-state-lock-dynamodb"
+        }
+    ]
+}
