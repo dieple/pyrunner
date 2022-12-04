@@ -1,6 +1,5 @@
 workspace: sre # valid value - dev, prod, sre or qa, etc
 tf_action: apply  # valid action are: plan, apply, plan-destroy, apply-destroy
 modules:
-  - ./main/firewall/azure-sg
   - ./main/firewall/internal-sg
-  # - ./main/instances/geth-dev
+  - ./main/instances/devops
