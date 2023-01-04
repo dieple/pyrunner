@@ -29,13 +29,13 @@ _backend.tf
 _envs.tf
 _providers.tf
 
-!infra/terraform/aws/variables/config/backend_override.tf
-!infra/terraform/aws/variables/config/providers_override.tf
+!terraform/aws/variables/config/backend_override.tf
+!terraform/aws/variables/config/providers_override.tf
 
-!infra/terraform/aws/variables/_accounts.tf
-!infra/terraform/aws/variables/_backend.tf
-!infra/terraform/aws/variables/_envs.tf
-!infra/terraform/aws/variables/_providers.tf
+!terraform/aws/variables/_accounts.tf
+!terraform/aws/variables/_backend.tf
+!terraform/aws/variables/_envs.tf
+!terraform/aws/variables/_providers.tf
 
 .terragrunt-cache/
 
