@@ -1,5 +1,3 @@
-# Keep this file in sync with ../../../../../workspaces.json
-
 variable "envs" {
   type = map(any)
 

@@ -1,0 +1,23 @@
+workspace:
+  - sre:
+      modules:
+        - ./main/networkings/vpc
+        - ./main/containers/ecr-repositories
+        - ./main/firewall/internal-sg
+        - ./main/instances/devops
+  - dev:
+      modules:
+        - ./main/firewall/internal-sg
+        - ./main/instances/devops
+  - qa:
+      modules:
+        - ./main/firewall/internal-sg
+        - ./main/instances/devops
+  - stg:
+      modules:
+        - ./main/firewall/internal-sg
+        - ./main/instances/devops
+  - prod:
+      modules:
+        - ./main/firewall/internal-sg
+        - ./main/instances/devops

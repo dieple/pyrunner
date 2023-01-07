@@ -17,6 +17,8 @@ queries/package-lock.json
 # vs code
 .history
 
+.DS_Store
+
 __pycache__/
 *.py[co]
 plan.out
@@ -44,4 +46,3 @@ generated-ssh-key-pairs/
 *.tar.gz
 *.tgz
 *.zip
-/tfrunner
